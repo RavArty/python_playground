@@ -11,6 +11,6 @@ email.set_content('I am here')
 with smtplib.SMTP(host='smtp.mail.yahoo.com', port=465) as smtp:
 	smtp.ehlo()
 	smtp.starttls()
-	smtp.login('email', 'pass')
+	smtp.login('your_email', 'your_pass')
 	smtp.send_message(email)
 	print('done')
